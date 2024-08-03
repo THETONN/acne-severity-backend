@@ -13,7 +13,7 @@ exports.predict = async (req, res) => {
 
     console.log('FormData created:', formData);
 
-    const response = await axios.post('http://localhost:5000/predict', formData, {
+    const response = await axios.post('https://acne-severity-backend-39d1e322c3ee.herokuapp.com/predict', formData, {
       headers: formData.getHeaders()
     });
 
